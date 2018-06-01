@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp">
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/userid_icon"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:id="@+id/icon_userName"-->
+            <!--/>-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/account"
+            android:layout_toRightOf="@+id/icon_userName"
+            android:hint="请输入账号"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginLeft="12dp"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/userpwd"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:id="@+id/icon_userPwd"-->
+            <!--/>-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_toRightOf="@+id/icon_userPwd"
+            android:hint="请输入密码"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="-15dp"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <Button android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Login"  />
+    <Button android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="注册"/>
+    <Button android:id="@+id/queryBook"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="查询"/>
+
+</LinearLayout>
